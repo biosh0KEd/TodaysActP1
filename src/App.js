@@ -4,6 +4,10 @@ import './App.css';
 function App() {
   return (
     <div className="App">
+
+      <TodoItem />
+      <TodoItem />
+
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
@@ -20,6 +24,16 @@ function App() {
       </header>
     </div>
   );
+}
+
+function TodoItem(){
+  return(
+    <li>
+      <span>V</span> {/* V como el botón de item completado */}
+      <p>Ir de compras</p>
+      <span>X</span> {/* X como el botón de item eliminado */}
+    </li>
+  )
 }
 
 export default App;
