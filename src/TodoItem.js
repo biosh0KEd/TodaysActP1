@@ -1,9 +1,11 @@
+import './TodoItem.css'
+
 function TodoItem(props){
     return(
-        <li>
-        <span>V</span> {/* V como el botón de item completado */}
-        <p>{props.text}</p>
-        <span>X</span> {/* X como el botón de item eliminado */}
+        <li className='TodoItem'>
+            <span className='Icon Icon-check Icon-check--active'>V</span>
+                <p className='TodoItem-p TodoItem-p--complete'>{props.text}</p>
+            <span className='Icon Icon-delete'>X</span>
         </li>
     )
 }
